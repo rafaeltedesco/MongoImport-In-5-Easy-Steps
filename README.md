@@ -21,21 +21,22 @@ Create a Docker Container with a MongoDB image. Map ports if you want to connect
 
 ---
 
-## 3. Access the Container
----
 
-Access the container using:
-
-`docker exec -it mongoDocker bash`
-
----
-
-## 4. Copy files
+## 3. Copy files
 ---
 
 Copy .csv file from your local machine to container
 
 `docker cp netflix_titles.csv mongoDocker:tmp/`
+
+---
+
+## 4. Access Container
+---
+
+Access the container using:
+
+`docker exec -it mongoDocker bash`
 
 ---
 
